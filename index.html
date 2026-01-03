@@ -3,63 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Studio</title>
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-LK-32.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css"/>
 
-</head>
+  </head>
   <body>
     
-   <header class="header-page">
+    <header class="header-page">
       <div class="container header-container">
         <nav class="header-nav">
-          <a class="header-logo" 
-             href="./index.html">Web<span class="logo-part">Studio</span>
+
+          <a href="./index.html" class="header-logo">
+            <img
+              src="./images/logo/logo.png"
+              alt="LK logo"
+              width="476"
+              height="90"
+              class="header-logo-img"
+            />
           </a>
+
           <ul class="menu-nav-list">
-            <li class="menu-nav-item">
-              <a class="menu-nav-link current" 
-                 href="./index.html">Studio</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" 
-                 href="">Portfolio</a>
-            </li>
-            <li class="menu-nav-item">
-              <a class="menu-nav-link" 
-                 href="">Contacts</a>
-            </li>
+            <li><a class="menu-nav-link current" href="#tech-skills">Tech Skills</a></li>
+            <li><a class="menu-nav-link" href="#contact-me">Contact me</a></li>
+            <li><a class="menu-nav-link" href="#portfolio">Portfolio</a></li>
           </ul>
         </nav>
 
-        <address class="address">
-          <ul class="address-list">
-            <li class="address-item">
-              <a class="address-link" 
-                 href="mailto:info@devstudio.com">info@devstudio.com
-              </a>
-            </li>
-            <li class="address-item">
-              <a class="address-link" 
-                 href="tel:+110001111111">+11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
-        <button class="burger-btn"
-        type="button">
-          <svg class="burger-icon" width="24" height="24">
+        
+        <button class="burger-btn"  data-menu-open aria-label="Open menu">
+          <svg width="24" height="24" fill="currentColor">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>          
         </button>
       </div>
-      <div class="mobil-menu">
+      <div class="mobil-menu" data-menu>
         <div class="container mobil-menu-container">
-          <button type="button" 
-                class="mobil-close-btn">
+          <button type="button" class="mobil-close-btn" data-menu-close>
             <svg class="mobil-close-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close">
               </use>
@@ -69,57 +54,45 @@
             <ul class="mobil-menu-nav-list">
               <li class="mobil-menu-nav-item">
                 <a class="mobil-menu-nav-link current" 
-                   href="./index.html">Studio</a>
+                   href="./index.html">Tech Skills</a>
+              </li>
+              <li class="mobil-menu-nav-item">
+                <a class="mobil-menu-nav-link" 
+                   href="">Contact me</a>
               </li>
               <li class="mobil-menu-nav-item">
                 <a class="mobil-menu-nav-link" 
                    href="">Portfolio</a>
               </li>
-              <li class="mobil-menu-nav-item">
-                <a class="mobil-menu-nav-link" 
-                   href="">Contacts</a>
-              </li>
+              
             </ul>
           </nav>
-          <address class="mobil-address">
-            <ul class="mobil-address-list">
-              <li class="mobil-address-item">
-                <a class="mobil-address-link" 
-                   href="mailto:info@devstudio.com">info@devstudio.com
-                </a>
-              </li>
-              <li class="mobil-address-item">
-                <a class="mobil-address-link" 
-                   href="tel:+110001111111">+11 (000) 111-11-11
-                </a>
-              </li>
-            </ul>
-          </address>
+
           <div>
             <ul class="mobil-social-links-list">
               <li class="icon-item">
-                <a href="" target="_blank" class="social-link">
+                <a class="social-link" href="https://wa.me/380971647012" target="_blank" rel="noopener noreferrer">
                   <svg class="social-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-instagram"></use>
+                    <use href="./images/icons.svg#icon-whatsapp"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">              
-                <a href="" target="_blank" class="social-link">  
+                <a class="social-link" href="https://t.me/lkarm67" target="_blank" rel="noopener noreferrer">
                   <svg class="social-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="icon-item">    
-                <a href="" target="_blank" class="social-link">
-                  <svg class="social-icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-facebook"></use>
+                    <use href="./images/icons.svg#icon-telegram"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="" target="_blank" class="social-link">
+                <a class="social-link" href="https://github.com/lkarm67" target="_blank" rel="noopener noreferrer">
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-github"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                 <a class="social-link" href="https://www.linkedin.com/in/liudmyla-karmeliuk-front-end/" target="_blank">
                   <svg class="social-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
@@ -130,67 +103,264 @@
         </div>
       </div>  
     </header>
+    
     <main>
+       
     <section class="hero-page">
-      <div class="container">
-          <h1 class="hero-page-title">Effective Solutions
-                for Your Business</h1>
-          <button type="button" class="hero-page-button">
-                  Order Service</button>                
-      </div>            
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-left-box">
+            <figure class="hero-photo">
+              <img 
+                src="./images/hero/my-photo.jpg"
+                alt="Portrait of Liudmyla, Full Stack Developer"
+                width="364"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+          <div class="hero-right-box">
+            <h1 class="hero-page-title">YOU IMAGINE IT — I BUILD IT</h1>
+            
+            <h2 class="hero-intro-title">
+              Hi <span aria-hidden="true">👋</span> I'm Liudmyla — Full Stack Developer
+            </h2>
+
+            <p class="hero-page-text">
+              I create clean, responsive and user-focused web applications.
+            </p>
+
+            <p class="hero-page-text">
+              Let's work together to bring your ideas to life!
+            </p>
+
+            <h3 class="hero-soft-title">My Soft Skills:</h3>
+            <ul class="soft-skills-list">
+              <li class="soft-skill-item">
+                <span aria-hidden="true">🎯</span> Goal-oriented
+              </li>
+              <li class="soft-skill-item">
+                <span aria-hidden="true">⏰</span> Self-organized
+              </li>
+              <li class="soft-skill-item">
+                <span aria-hidden="true">❤️</span> Empathetic
+              </li>
+            </ul>
+
+            <a class="hero-page-link" href="https://lkarm67.github.io/my-resume-25/" target="_blank" rel="noopener noreferrer">
+              My Resume
+            </a>
+ 
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="features-page">
-      <div class="container features-container">
-        <h2 class="features-title visually-hidden">Features</h2>
-          <ul class="features-list">
-            <li class="features-item">
-              <div class="features-icon-box">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-antenna">
-                    </use>  
-                  </svg>
-              </div>
-                <h3 class="features-subtitle">Strategy</h3>
-                <p class="features-item-text">Our goal is to identify the business
-problem to walk away with the perfect and creative solution. 
-                </p>
-            </li>
-            <li class="features-item">
-              <div class="features-icon-box">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-clock">
-                    </use>  
-                  </svg>
-              </div>  
-                <h3 class="features-subtitle">Punctuality</h3>
-                <p class="features-item-text">Bring the key message to the brand's audience for the best price within the shortest possible time.
-                </p>
-            </li>
-            <li class="features-item">
-              <div class="features-icon-box">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-diagram">
-                    </use>  
-                  </svg>                
-              </div>  
-                <h3 class="features-subtitle">Diligence</h3>
-                <p class="features-item-text">Research and confirm brands with the strongest digital growth opportunities and minimize risk. 
-                </p>                          
-            </li>
-            <li class="features-item">
-              <div class="features-icon-box">
-                  <svg class="features-icon" width="64" height="64">
-                    <use href="./images/icons.svg#icon-astronaut">
-                    </use>  
-                  </svg>
-              </div>
-                <h3 class="features-subtitle">Technologies</h3>
-                <p class="features-item-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving. 
-                </p>                          
-            </li>
-          </ul>
-      </div>    
+
+    <section class="tech-skills-page">
+      <div class="container tech-skills-container">
+        <h2 class="tech-skills-title"> My Tech Skills</h2>
+
+        <ul class="tech-skills-list">
+
+          <!-- HTML -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" alt="HTML" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">HTML</h3>
+          </li>
+
+          <!-- CSS -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" alt="CSS" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">CSS</h3>
+          </li>
+
+          <!-- JavaScript -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" alt="JavaScript" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">JavaScript</h3>
+          </li>
+
+          <!-- TypeScript -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" alt="TypeScript" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">TypeScript</h3>
+          </li>
+
+          <!-- JSON -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://www.json.org/json-en.html" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/json" alt="JSON" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">JSON</h3>
+          </li>
+
+          <!-- Axios -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://axios-http.com/docs/intro" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/axios" alt="Axios" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Axios</h3>
+          </li>
+
+          <!-- React -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" alt="React" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">React</h3>
+          </li>
+
+          <!-- React Query -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://tanstack.com/query/latest" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/reactquery" alt="React Query" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">React Query</h3>
+          </li>
+
+          <!-- Next.js -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/nextdotjs" alt="Next.js" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Next.js</h3>
+          </li>
+
+          <!-- Node.js -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://nodejs.org/" target="_blank" rel="noreferrer">
+                <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" alt="Node.js" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Node.js</h3>
+          </li>
+
+          <!-- Express -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <img src="https://cdn.simpleicons.org/express" alt="Express.js" width="60" height="60">
+            </div>
+            <h3 class="tech-skills-subtitle">Express.js</h3>
+          </li>
+
+          <!-- MongoDB -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/mongodb" alt="MongoDB" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">MongoDB</h3>
+          </li>
+
+          <!-- Postman -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://www.postman.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/postman" alt="Postman" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Postman</h3>
+          </li>
+
+          <!-- GitHub -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://github.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/github" alt="GitHub" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">GitHub</h3>
+          </li>
+
+          <!-- Netlify -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/netlify" alt="Netlify" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Netlify</h3>
+          </li>
+
+          <!-- Vercel -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://vercel.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/vercel" alt="Vercel" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Vercel</h3>
+          </li>
+
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://render.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/render" alt="Render" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Render</h3>
+          </li>
+
+          <!-- ChatGPT -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://chat.openai.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/openai" alt="ChatGPT" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">ChatGPT</h3>
+          </li>
+
+          <!-- GitHub Copilot -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://github.com/features/copilot" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/githubcopilot" alt="GitHub Copilot" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Copilot</h3>
+          </li>
+
+          <!-- Trello -->
+          <li class="tech-skills-item">
+            <div class="tech-skills-icon-box">
+              <a href="https://trello.com/" target="_blank" rel="noreferrer">
+                <img src="https://cdn.simpleicons.org/trello" alt="Trello" width="60" height="60">
+              </a>
+            </div>
+            <h3 class="tech-skills-subtitle">Trello</h3>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="team-page">
@@ -233,131 +403,16 @@ problem to walk away with the perfect and creative solution.
                           </a>
                         </li>  
                       </ul>  
-                    
-                  </div>
-                </li>
-                <li class="team-item">
-                  <img srcset="./images/team/photo-2.jpg 1x, ./images/team/photo-2@2x.jpg"
-                  src="./images/photo-2.jpg" alt="Tom Ford" width="264"/>
-                  <div class="team-text-box">
-                    <h3 class="team-subtitle">Tom Ford</h3>
-                    <p class="team-descr">Frontend Developer</p>
-                    <ul class="social-links-list">
-                        <li class="icon-item">
-                          <a href="" target="_blank" class="social-link">
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="icon-item">              
-                          <a href="" target="_blank" class="social-link">  
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="icon-item">    
-                          <a href="" target="_blank" class="social-link">
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="icon-item">
-                          <a href="" target="_blank" class="social-link">
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                          </a>
-                        </li>  
-                      </ul>  
-                  </div>
-                </li>
-                <li class="team-item">  
-                  <img srcset="./images/team/photo-3.jpg 1x, ./images/team/photo-3@2x.jpg"
-                  src="./images/photo-3.jpg" alt="Camila Garcia" width="264"/>
-                  <div class="team-text-box">  
-                    <h3 class="team-subtitle">Camila Garcia</h3>
-                      <p class="team-descr">Marketing</p>
-                      <ul class="social-links-list">
-                          <li class="icon-item">
-                            <a href="" target="_blank" class="social-link">
-                              <svg class="social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-instagram"></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li class="icon-item">              
-                            <a href="" target="_blank" class="social-link">  
-                              <svg class="social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-twitter"></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li class="icon-item">    
-                            <a href="" target="_blank" class="social-link">
-                              <svg class="social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-facebook"></use>
-                              </svg>
-                            </a>
-                          </li>
-                          <li class="icon-item">
-                            <a href="" target="_blank" class="social-link">
-                              <svg class="social-icon" width="16" height="16">
-                                <use href="./images/icons.svg#icon-linkedin"></use>
-                              </svg>
-                            </a>
-                          </li>  
-                        </ul>  
-                  </div>
-                </li>
-                <li class="team-item">
-                  <img srcset="./images/team/photo-4.jpg 1x, ./images/team/photo-4@2x.jpg"
-                  src="./images/photo-4.jpg" alt="Daniel Wilson" width="264"/>
-                  <div class="team-text-box">
-                    <h3 class="team-subtitle">Daniel Wilson</h3>
-                    <p class="team-descr">UI Designer</p>
-                    <ul class="social-links-list">
-                        <li class="icon-item">
-                          <a href="" target="_blank" class="social-link">
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="icon-item">              
-                          <a href="" target="_blank" class="social-link">  
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="icon-item">    
-                          <a href="" target="_blank" class="social-link">
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                          </a>
-                        </li>
-                        <li class="icon-item">
-                          <a href="" target="_blank" class="social-link">
-                            <svg class="social-icon" width="16" height="16">
-                              <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                          </a>
-                        </li>  
-                    </ul>  
-                    
+                                 
                   </div>
                 </li>
             </ul>
       </div>
     </section>
-
+-->
     <section class="portfolio-page">
       <div class="container portfolio-container">
-        <h2 class="portfolio-page-title">Our Portfolio</h2>
+        <h2 class="portfolio-page-title">My Portfolio</h2>
         <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="picture-wrap">
@@ -371,17 +426,18 @@ problem to walk away with the perfect and creative solution.
                   <source media="min-width: 320px"
                   srcset="./images/portfolio/portfolio-mob-1-min.jpg 1x, ./images/portfolio/portfolio-mob-1@2x.jpg 2x"
                   />   
-                  <img src="./images/portfolio/portfolio-desk-1-min.jpg" alt="Banking app's interface" width="360"/>
+                  <img src="./images/portfolio/portfolio-desk-1-min.jpg" alt="Tool rental application" width="360"/>
                 </picture>
-                <p class="portfolio-p overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
-              </div>    
-                
+                <p class="portfolio-p overlay">A team-based full-stack project covering API development, frontend integration, and user authentication. My role: creation of a private endpoint for adding a new tool listing(backend) and registration page(frontend).</p>
+              </div>
+
               <div class="portfolio-text-box">
-                    <h3 class="portfolio-subtitle">Banking App</h3>
+                    <h3 class="portfolio-subtitle">ToolNext App</h3>
                     <p class="portfolio-descr">App</p>
                   </div>
               
             </li>
+            
             <li class="portfolio-item">
               <div class="picture-wrap">
                 <picture>
@@ -394,15 +450,16 @@ problem to walk away with the perfect and creative solution.
                   <source media="min-width: 320px"
                   srcset="./images/portfolio/portfolio-mob-2-min.jpg 1x, ./images/portfolio/portfolio-mob-2@2x.jpg 2x"
                   />   
-                  <img src="./images/portfolio/portfolio-desk-2-min.jpg" alt="Payment by QR-code" width="360"/>
+                  <img src="./images/portfolio/portfolio-desk-2-min.jpg" alt="Different cards with notes" width="360"/>
                 </picture>
-                <p class="portfolio-p overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                <p class="portfolio-p overlay">NoteHub is a solo-built full-stack application that allows users to securely create and manage notes using private, authenticated API endpoints.</p>
               </div>
               <div class="portfolio-text-box">
-                <h3 class="portfolio-subtitle">Cashless Payment</h3>
-                <p class="portfolio-descr">Marketing</p>
+                <h3 class="portfolio-subtitle">NoteHub App</h3>
+                <p class="portfolio-descr">App</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="picture-wrap">
                 <picture>
@@ -417,13 +474,14 @@ problem to walk away with the perfect and creative solution.
                   />   
                   <img src="./images/portfolio/portfolio-desk-3-min.jpg" alt="Meditation App's interface" width="360"/>
                 </picture>
-                  <p class="portfolio-p overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                  <p class="portfolio-p overlay">A modern, responsive website for a company specializing in furniture sales. The site features product listings, promotional sections, and a user-friendly interface with pagination. My role: developer of the Header</p>
               </div>
               <div class="portfolio-text-box">
-                <h3 class="portfolio-subtitle">Meditation App</h3>
-                <p class="portfolio-descr">App</p>
+                <h3 class="portfolio-subtitle">Меблерія</h3>
+                <p class="portfolio-descr">Marketing</p>
               </div>  
             </li>
+            
             <li class="portfolio-item">
               <div class="picture-wrap">
                 <picture>
@@ -438,13 +496,14 @@ problem to walk away with the perfect and creative solution.
                   />   
                   <img src="./images/portfolio/portfolio-desk-4-min.jpg" alt="Taxi driver" width="360"/>
                 </picture>
-                <p class="portfolio-p overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                <p class="portfolio-p overlay">A keyword-based image search app featuring modals, a loading indicator, and user notifications.Individual frontend project.</p>
               </div>
               <div class="portfolio-text-box">
-                <h3 class="portfolio-subtitle">Taxi Service</h3>
-                <p class="portfolio-descr">Marketing</p>
+                <h3 class="portfolio-subtitle">Image Search App</h3>
+                <p class="portfolio-descr">App</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="picture-wrap">
                 <picture>
@@ -459,13 +518,14 @@ problem to walk away with the perfect and creative solution.
                   />   
                   <img src="./images/portfolio/portfolio-desk-5-min.jpg" alt="Phone's screen Illustrations" width="360"/> 
                 </picture>
-                <p class="portfolio-p overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                <p class="portfolio-p overlay">A website of online store with collection of premium watches. Responsive layout. My role: developer of the sale section</p>
               </div>
                 <div class="portfolio-text-box">
-                <h3 class="portfolio-subtitle">Screen Illustrations</h3>
-                <p class="portfolio-descr">Design</p>
+                <h3 class="portfolio-subtitle">WatchCharm</h3>
+                <p class="portfolio-descr">Marketing</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="picture-wrap">
                 <picture>
@@ -480,11 +540,11 @@ problem to walk away with the perfect and creative solution.
                   />   
                   <img src="./images/portfolio/portfolio-desk-6-min.jpg" alt="Girl with phone" width="360"/>
                 </picture>
-                <p class="portfolio-p overlay">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                <p class="portfolio-p overlay">A website of WebStudio company. Responsive/Adaptive design, transform effects, modal window.A website of WebStudio company. Responsive/Adaptive design, transform effects, modal window. My role: frontend developer.</p>
               </div>
               <div class="portfolio-text-box">
-                <h3 class="portfolio-subtitle">Online Courses</h3>
-                <p class="portfolio-descr">Marketing</p>
+                <h3 class="portfolio-subtitle">WebStudio</h3>
+                <p class="portfolio-descr">Portfolio</p>
               </div>
             </li>
           </ul>
@@ -493,6 +553,19 @@ problem to walk away with the perfect and creative solution.
         
     </main>
     
+<!---<li class="unmarked-item">
+                <a class="link" href="https://t.me/lkarm67" target="_blank" rel="noopener noreferrer">Telegram</a>
+              </li>
+              <li class="unmarked-item">
+                <a class="link" href="https://github.com/lkarm67" target="_blank">GitHub</a>
+              </li>
+              <li class="unmarked-item">
+                <a class="link" href="https://www.linkedin.com/in/liudmyla-karmeliuk-9071a9388/" target="_blank">LinkedIn</a>
+              </li>
+              <li class="unmarked-item">
+                Chotin, Chernivtsi Region, Ukraine
+              </li>
+            -->
     <footer class="footer-page">
       <div class="container footer-container">
         <div class="footer-logo-box">
@@ -623,6 +696,9 @@ problem to walk away with the perfect and creative solution.
           <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>  
+    </div>
+    
+    <script src="./js/mobile-menu.js"></script>
+  
   </body>
 </html>
